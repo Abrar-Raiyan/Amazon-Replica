@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #EAEDED;
+        }
+
+        /* Header */
+        .header {
+            background-color: #131921;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FF9900;
+            margin-right: 20px;
+        }
+        .header input[type=text] {
+            width: 50%;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+        }
+        .header input[type=button] {
+            padding: 9px 15px;
+            background-color: #FF9900;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .header-links {
+            margin-left: auto;
+        }
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #232F3E;
+            display: flex;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url("https://images.unsplash.com/photo-1512446733611-9099a758e0f0?w=1200") no-repeat center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero h1 {
+            font-size: 40px;
+        }
+        .hero h3 {
+            font-weight: normal;
+        }
+
+        /* Product Sections */
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            width: 200px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product b {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .product button {
+            padding: 8px 12px;
+            background-color: #FF9900;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #232F3E;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer h3 {
+            margin-bottom: 10px;
+        }
+        .footer div {
+            font-size: 14px;
+        }
+        .footer-bottom {
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">amazon</div>
+        <input type="text" placeholder="Search Amazon">
+        <input type="button" value="Search">
+        <div class="header-links">
+            <a href="#">Sign In</a>
+            <a href="#">Returns & Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <div class="nav">
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Welcome to Amazon Clone</h1>
+        <h3>Shop Electronics, Books, Fashion & more</h3>
+    </div>
+
+    <!-- Electronics -->
+    <div class="section">
+        <h2>Electronics</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Smartphone</b>$299.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Headphones</b>$59.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Laptop</b>$799.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Smart Watch</b>$129.99<br>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Books -->
+    <div class="section">
+        <h2>Books</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>The Great Gatsby</b>$9.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Harry Potter</b>$14.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Programming in C</b>$19.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Learn Python</b>$24.99<br>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fashion -->
+    <div class="section">
+        <h2>Fashion</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>T-Shirt</b>$19.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Jeans</b>$39.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Sneakers</b>$49.99<br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150">
+                <b>Jacket</b>$69.99<br>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <h3>Get to Know Us</h3>
+            Careers<br>Blog<br>About Amazon<br>Investor Relations
+        </div>
+        <div>
+            <h3>Make Money with Us</h3>
+            Sell products<br>Affiliate Program<br>Advertise
+        </div>
+        <div>
+            <h3>Amazon Payment</h3>
+            Business Card<br>Shop with Points<br>Reload Balance
+        </div>
+        <div>
+            <h3>Help</h3>
+            Your Account<br>Returns Centre<br>Help
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Amazon Clone | CSE HTML-CSS Project
+    </div>
+
+</body>
+</html>
